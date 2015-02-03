@@ -80,6 +80,7 @@
 					// Save twitter-specific information to the user
 					user.setUserField(uid, 'twid', twid);
 					db.setObjectField('twid:uid', twid, uid);
+					user.setUserField(uid, 'email:confirmed', 1);
 
 					// Save their photo, if present
 					if (photos && photos.length > 0) {
